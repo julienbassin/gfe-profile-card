@@ -1,0 +1,142 @@
+/* Put any custom CSS styles here.  */
+/* Be sure to delete the <style> tag in index.html if you want to use this stylesheet. */
+body {
+  margin: 0;
+  font-family: "Noto Sans", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  min-height: 100vh;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  background: var(--Linear-Page, linear-gradient(148deg, #F9FAFB 8.89%, #D2D6DB 100.48%));
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.card{
+  width: 21.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--gap-1040-px, 2.5rem);
+
+  border-radius: var(--border-radius-rounded-lg-8-px, 0.5rem);
+  background: var(--colors-base-white, #FFF);
+
+  /* shadow / shadow */
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.06);
+  padding: 1.5rem var(--padding-416-px, 1rem);
+
+}
+
+.details{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--gap-624-px, 1.5rem);
+  align-self: stretch;
+}
+
+.profilethumbnail{
+  display: flex;
+  width: 4rem;
+  height: 4rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.username{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--gap-14-px, 0.25rem);
+  align-self: stretch;
+}
+
+.name{
+  color: var(--Text-primary, var(--colors-neutral-900, #171717));
+  text-align: center;
+
+  /* text-xl-20/medium */
+  font-family: "Noto Sans";
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.75rem; /* 140% */
+}
+
+.jobtitle{
+  color: var(--Text-secondary, var(--colors-neutral-600, #525252));
+  text-align: center;
+
+  /* text-sm-14/normal */
+  font-family: "Noto Sans";
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.25rem; /* 142.857% */
+}
+
+.info{
+  align-self: stretch;
+  color: var(--Text-secondary, var(--colors-neutral-600, #525252));
+  text-align: center;
+
+  /* text-base-16/normal */
+  font-family: "Noto Sans";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem; /* 150% */
+}
+
+.btn{
+  display: flex;
+  padding: var(--padding-2510-px, 0.625rem) var(--padding-416-px, 1rem);
+  justify-content: center;
+  align-items: center;
+  gap: var(--gap-156-px, 0.375rem);
+  align-self: stretch;
+
+  border-radius: var(--rounded, 0.25rem);
+  background: var(--colors-indigo-700, #4338CA);
+
+  /* shadow / shadow */
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.06);
+  line-height: 1.5rem; /* 150% */
+  color: #FFF;
+}
+
+.socials{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  align-self: stretch;
+}
+
+.credits {
+  color: #777;
+  position: fixed;
+  bottom: 24px;
+  left: 24px;
+  font-size: 11px;
+  text-align: center;
+}
+
+.credits a {
+  color: #000;
+  font-weight: bold;
+}
